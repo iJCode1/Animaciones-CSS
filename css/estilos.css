@@ -4,9 +4,6 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
-.container {
-}
-
 .menu {
   background: #393e46;
   height: 2.5em;
@@ -27,4 +24,55 @@
 .menu a {
   color: white;
   text-decoration: none;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 0.5em 0em 1em;
+  font-size: 3em;
+}
+/*----------------------------- Transitions ------------------*/
+.transition__title {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.canasta {
+  height: 100px;
+  position: relative;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.pelota {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #383e56;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pelota.a {
+  position: absolute;
+  left: 0px;
+  background: #76ead7;
+  transition: 1s;
+}
+
+.pelota.b {
+  position: absolute;
+  right: 0px;
+  background: #c4fb6d;
+  transition: 1s;
+}
+
+.canasta:hover .pelota.a {
+  left: calc(50% - 100px);
+}
+
+.canasta:hover .pelota.b {
+  right: calc(50% - 100px);
 }
