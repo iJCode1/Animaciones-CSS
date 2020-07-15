@@ -42,7 +42,7 @@
   height: 100px;
   position: relative;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .pelota {
@@ -75,4 +75,21 @@
 
 .canasta:hover .pelota.b {
   right: calc(50% - 100px);
+}
+
+.transition__codeWrapp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.transition__code {
+  background: #383e56;
+  width: 33%;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
 }
