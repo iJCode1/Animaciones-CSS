@@ -19,6 +19,9 @@
           <li class="menu__item">
             <a href="#Transitions" class="menu__link">Transitions</a>
           </li>
+          <li class="menu__item">
+            <a href="#Transform" class="menu__link">Transform</a>
+          </li>
         </ol>
       </div>
       <h1 class="title">Transitions in CSS</h1>
@@ -29,6 +32,44 @@
           <div class="pelota b">Mundo</div>
         </div>
       </div>
-    </div>
+
+      <div class="transformWrap" id="Transform">
+        <p class="transform__title">Transform</p>
+        <p class="transform__paragraph">Tenemos 4 opciones para poder utilizar en las transformaciones, las cuales son: <pre class="transform__pre"> transform: <span class="red">rotate() | scale() | skew() | translate() </span>;</pre></p>
+        <h3 class="red">- rotate()</h3>
+        <div class="transform__original">
+          <p>original</p>
+          <div class="canasta1">
+            <div class="pelota a1"></div>
+            <div class="pelota b1"></div>
+          </div>
+        </div>
+        <div class="card__container">
+          <div class="card__element"><pre class="rotate__title">transform: rotateX(35deg);</pre>
+            <div class="canastar1">
+              <div class="pelota ra1"></div>
+              <div class="pelota rb1"></div>
+            </div>
+          </div>
+          <div class="card__element"><pre class="rotate__title">transform: rotateY(35deg);</pre>
+            <div class="canastar2">
+              <div class="pelota ra2"></div>
+              <div class="pelota rb2"></div>
+            </div>
+          </div>
+          <div class="card__element"><pre class="rotate__title">transform: rotateZ(35deg);</pre>
+            <div class="canastar3">
+              <div class="pelota ra3"></div>
+              <div class="pelota rb3"></div>
+            </div>
+          </div>
+          <div class="card__element"><pre class="rotate__title">transform: rotate3d(1, 1, 1, 35deg);</pre>
+            <div class="canastar4">
+              <div class="pelota ra4"></div>
+              <div class="pelota rb4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
