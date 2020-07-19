@@ -144,9 +144,10 @@
 }
 
 .card__container {
-  height: 300px;
+  height: 700px;
   /* border: 1px solid red; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 1em 0em 0em 0em;
 }
@@ -154,20 +155,26 @@
 .card__element {
   height: 300px;
   background: #162447;
-  width: 24%;
+  width: 49%;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+}
+
+.rotate__title {
+  align-self: flex-end;
+  margin-right: 2em;
 }
 
 .canastar1 {
   /* border: 1px solid red; */
   height: 100px;
-  width: 70%;
+  width: 50%;
   position: relative;
   transform: rotate(35deg);
+  padding: 20px;
   /* transform: rotate() | scale() | skew() | translate(); */
 }
 
@@ -225,7 +232,7 @@
 /*--------------------- Canasta 3 (Z) -------------------*/
 .canastar3 {
   /* border: 1px solid red; */
-  width: 70%;
+  width: 50%;
   height: 100px;
   position: relative;
   transform: rotateZ(35deg);
@@ -256,7 +263,7 @@
 /*--------------------- Canasta 4 (3D) -------------------*/
 .canastar4 {
   /* border: 1px solid red; */
-  width: 90%;
+  width: 70%;
   height: 100px;
   position: relative;
   transform: rotate3d(1, 1, 1, 35deg);
